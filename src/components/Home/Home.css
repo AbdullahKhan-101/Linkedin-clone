@@ -1,0 +1,78 @@
+.upwork_add {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.upwork_add > h5 > a {
+  font-size: 1.6rem;
+  color: #0a66c2;
+  font-weight: 700;
+  margin-right: 5px;
+}
+.upwork_add p {
+  font-size: 1.6rem;
+  text-align: center;
+  color: #434649;
+  text-decoration: underline;
+  cursor: pointer;
+  font-weight: 600;
+}
+
+/* layout here */
+.layout {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 2rem;
+}
+.layout .left_side,
+.layout .right_side {
+  flex: 0.24;
+  position: sticky;
+  top: 120px;
+  z-index: 999;
+  left: 0;
+
+  /* font-size: 2rem; */
+  /* text-align: center; */
+  /* border: 1px solid blue; */
+}
+.layout .main {
+  flex: 0.5;
+  /* font-size: 2rem; */
+  /* text-align: center; */
+  /* border: 1px solid black; */
+}
+
+/* media quries */
+@media (max-width: 768px) {
+  .upwork_add {
+    flex-direction: column;
+    width: 95%;
+    margin-left: 0.7rem;
+    align-items: center;
+    font-size: 1.4rem;
+  }
+  .upwork_add > h5 > a,
+  .upwork_add p {
+    font-size: 1.4rem;
+  }
+  .layout {
+    /* justify-content: center; */
+    margin: 5%;
+    flex-direction: column;
+  }
+  .layout .main {
+    flex: 0.88;
+    margin: 20px 0px 0px 0px;
+  }
+}
+@media (max-width: 540px) {
+  .layout .main {
+    flex: 1;
+  }
+  .layout {
+    margin: 1rem 0rem 0rem 0rem;
+    /* margin-top: 1rem; */
+  }
+}

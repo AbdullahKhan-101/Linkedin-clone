@@ -1,0 +1,44 @@
+.right_side_section {
+  position: sticky;
+  top: 12rem;
+  background-color: white;
+  border-radius: 1rem;
+  border: 1px solid lightgray;
+  height: fit-content;
+  padding-bottom: 1.5rem;
+}
+.right_side_header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 1rem;
+}
+.right_side_header h2 {
+  font-size: 1.6rem;
+  font-weight: 400;
+}
+.news_article {
+  display: flex;
+  cursor: pointer;
+  padding: 1rem;
+}
+.news_article:hover {
+  background-color: whitesmoke;
+}
+.news_article_left {
+  color: #0177b7;
+  margin-right: 0.5rem;
+}
+.news_article_left > .MuiSvgIcon-root {
+  font-size: 1.5rem;
+}
+.news_article_right {
+  flex: 1;
+}
+.news_article_right > h4 {
+  font-size: 1.4rem;
+}
+.news_article_right > p {
+  font-size: 1.2rem;
+  color: gray;
+}

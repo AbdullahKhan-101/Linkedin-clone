@@ -1,0 +1,89 @@
+.headerOption {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  color: rgb(117, 117, 117);
+  cursor: pointer;
+  margin-right: 36px;
+  /* border: 1px solid black; */
+}
+@media (max-width: 820px) {
+  .headerOption {
+    margin-right: 26px;
+  }
+}
+.headerOption:hover {
+  color: black;
+}
+.active,
+.headerOption:active {
+  color: black;
+}
+
+.headerOption_title {
+  font-size: 12px;
+  font-weight: 400;
+  letter-spacing: 0.04rem;
+}
+.headerOption_icon {
+  object-fit: contain;
+  height: 25px !important;
+  width: 25px !important;
+}
+.dropdown {
+  display: flex;
+  align-items: center;
+  position: relative;
+}
+
+.dropdown .MuiSvgIcon-root {
+  margin: 0;
+  padding: 0;
+  margin-left: -0.3rem;
+  margin-top: -0.25rem;
+  font-size: 2.2rem;
+  overflow: hidden;
+}
+.headerOption_title_inside {
+  /* color: blue; */
+  font-weight: 600;
+  /* font-size: 1.4rem; */
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen,
+    Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+}
+.signOut {
+  position: absolute;
+  top: 6px;
+  right: -16px;
+  font-weight: 500;
+  /* overflow: hidden; */
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen,
+    Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+  box-shadow: 0px 1px 0.5px 0.5px rgba(0, 0, 0, 0.102);
+  transition-duration: 0.3s;
+  padding: 0.8rem 1.2rem;
+  font-size: 1.4rem;
+  color: rgba(0, 0, 0, 0.918);
+  border-radius: 0 0 4px 4px;
+  background-color: white;
+  transition: all 0.3s ease-in-out;
+  display: none;
+}
+.dropdown:hover .signOut {
+  display: block;
+  /* transition: all 1s; */
+}
+.dropdown:active .signOut {
+  display: block;
+  transition: all 1s;
+}
+@media (max-width: 768px) {
+  .signOut {
+    top: -30px;
+    right: -20px;
+    font-size: 1.4rem;
+  }
+  .headerOption {
+    margin-right: 10px;
+  }
+}
