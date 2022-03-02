@@ -29,30 +29,35 @@ const Header = () => {
   };
 
   return (
-    <div className="header_line">
-      <div className="container header">
-        <div className="header_left">
-          <img src="https://freepngimg.com/thumb/categories/1371.png" alt="" />
-          <div className="header_search">
-            <Search />
-            <input type="text" placeholder="Search" />
+    <div className="main_H">
+      <div className="header_line">
+        <div className="container header">
+          <div className="header_left">
+            <img
+              src="https://freepngimg.com/thumb/categories/1371.png"
+              alt=""
+            />
+            <div className="header_search">
+              <Search />
+              <input type="text" placeholder="Search" />
+            </div>
           </div>
-        </div>
 
-        <div className="header_right">
-          <HeaderOption classs="active" Icon={Home} title="Home" />
-          <span className="network_hide">
-            <HeaderOption title="My Network" Icon={SupervisorAccount} />
-          </span>
-          <HeaderOption title="Jobs" Icon={BusinessCenter} />
-          <HeaderOption title="Messeging" Icon={Chat} />
-          <HeaderOption title="Notifications" Icon={Notifications} />{" "}
-          <HeaderOption
-            onClick={logoutOfApp}
-            title="me"
-            Dropdown={true}
-            avatar={true}
-          />
+          <div className="header_right">
+            <HeaderOption classs="active" Icon={Home} title="Home" />
+            <span className="network_hide">
+              <HeaderOption title="My Network" Icon={SupervisorAccount} />
+            </span>
+            <HeaderOption title="Jobs" Icon={BusinessCenter} />
+            <HeaderOption title="Messeging" Icon={Chat} />
+            <HeaderOption title="Notifications" Icon={Notifications} />{" "}
+            <HeaderOption
+              onClick={logoutOfApp}
+              title="me"
+              Dropdown={true}
+              avatar={true}
+            />
+          </div>
         </div>
       </div>
     </div>

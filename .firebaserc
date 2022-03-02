@@ -1,5 +1,7 @@
 {
   "projects": {
-    "default": "linkedin-clone-c45a2"
-  }
+    "default": "linkedin-clone-c45a2",
+    "y": "linkedin-clone-c45a2"
+  },
+  "targets": {}
 }
